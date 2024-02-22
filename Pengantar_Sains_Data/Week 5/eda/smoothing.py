@@ -39,7 +39,7 @@ def get_evs(data, smooth, end="start"):
   return y_smoothed_end
 
 
-def apply_evs(data, smooth):
+def apply_evs(data, smooth, get_evs):
   y_smoothed_start = get_evs(data, smooth, end="start")
   y_smoothed_end = get_evs(data, smooth, end="end")
 
