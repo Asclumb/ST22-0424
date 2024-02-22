@@ -48,7 +48,6 @@ def apply_evs(data, smooth):
   smooth_with_evs[-1] = y_smoothed_end
   return smooth_with_evs
 
-
 def apply_3(data):
   """data must have a numpy ndarrray data type"""
   data_update = data.copy()
@@ -226,4 +225,3 @@ def apply_twice(data, smooth, seq):
       rough = apply_5(rough)
 
   return smooth + rough
-  
